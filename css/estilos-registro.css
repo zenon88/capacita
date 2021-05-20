@@ -1,0 +1,268 @@
+        /*************** Varibles globales*******************************/
+
+        
+        .contenedor {
+            position: relative;
+            margin: auto;
+            width: 100%;
+            height: auto;
+        }
+        
+        .fila {
+            position: relative;
+            margin: auto;
+            width: 100%;
+            height: auto;
+            clear: both;
+            display: table;
+        }
+        
+        [class*="col-"] {
+            float: left;
+            /*border: 2px solid red;*/
+            padding: 10px;
+        }
+        /********************************************************************************/
+        
+        .modalContainer {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #000;
+        }
+        
+        .modalContainer .modal-content {
+            color: #000;
+            background-color: #E9ECEF;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid rgb(0,255,254);
+            width: 40%;
+        }
+        
+        .modalContainer .close {
+            color: rgb(75,75,75);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .modalContainer .close:hover,
+        .modalContainer .close:focus {
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .contenido-ingresar,
+        .contenido-registro {
+            background-color: #E9ECEF;
+            color: rgb(75,75,75);;
+        }
+
+        @media(max-width: 800px) {
+            .modalContainer .modal-content {
+                width: 80%;
+            }
+
+        }
+
+
+
+        }
+        /********************* MEDIDAS PARA AJUSTES DE PANTALLAS *********************/
+        /*************** PANTALLA DE ESCRITORIO GRANDE (lg) **************************/
+        
+        @media(min-width: 1200px) {
+            .col-lg-p-12 {
+                width: 100%;
+            }
+            .col-lg-p-11 {
+                width: 91.66666667%;
+            }
+            .col-lg-p-10 {
+                width: 83.33333333%;
+            }
+            .col-lg-p-9 {
+                width: 75%;
+            }
+            .col-lg-p-8 {
+                width: 66.66666667%;
+            }
+            .col-lg-p-7 {
+                width: 58.33333333%;
+            }
+            .col-lg-p-6 {
+                width: 50%;
+            }
+            .col-lg-p-5 {
+                width: 41.66666667%;
+            }
+            .col-lg-p-4 {
+                width: 33.33333333%;
+            }
+            .col-lg-p-3 {
+                width: 25%;
+            }
+            .col-lg-p-2 {
+                width: 16.66666667%;
+            }
+            .col-lg-p-1 {
+                width: 8.33333333%;
+            }
+            .col-lg-p-0 {
+                display: none;
+            }
+        }
+        /*************** PANTALLA DE ESCRITORIO MEDIANA (md) *************************/
+        
+        @media(max-width: 1199px) and (min-width: 992px) {
+            .col-md-p-12 {
+                width: 100%;
+            }
+            .col-md-p-11 {
+                width: 91.66666667%;
+            }
+            .col-md-p-10 {
+                width: 83.33333333%;
+            }
+            .col-md-p-9 {
+                width: 75%;
+            }
+            .col-md-p-8 {
+                width: 66.66666667%;
+            }
+            .col-md-p-7 {
+                width: 58.33333333%;
+            }
+            .col-md-p-6 {
+                width: 50%;
+            }
+            .col-md-p-5 {
+                width: 41.66666667%;
+            }
+            .col-md-p-4 {
+                width: 33.33333333%;
+            }
+            .col-md-p-3 {
+                width: 25%;
+            }
+            .col-md-p-2 {
+                width: 16.66666667%;
+            }
+            .col-md-p-1 {
+                width: 8.33333333%;
+            }
+            .col-md-p-0 {
+                display: none;
+            }
+        }
+        /******************* PANTALLA DE ESCRITORIO PEQUENA (sm) *********************/
+        
+        @media(max-width: 991px) and (min-width: 768px) {
+            .col-sm-p-12 {
+                width: 100%;
+            }
+            .col-sm-p-11 {
+                width: 91.66666667%;
+            }
+            .col-sm-p-10 {
+                width: 83.33333333%;
+            }
+            .col-sm-p-9 {
+                width: 75%;
+            }
+            .col-sm-p-8 {
+                width: 66.66666667%;
+            }
+            .col-sm-p-7 {
+                width: 58.33333333%;
+            }
+            .col-sm-p-6 {
+                width: 50%;
+            }
+            .col-sm-p-5 {
+                width: 41.66666667%;
+            }
+            .col-sm-p-4 {
+                width: 33.33333333%;
+            }
+            .col-sm-p-3 {
+                width: 25%;
+            }
+            .col-sm-p-2 {
+                width: 16.66666667%;
+            }
+            .col-sm-p-1 {
+                width: 8.33333333%;
+            }
+            .col-sm-p-0 {
+                display: none;
+            }
+        }
+        /******************* PANTALLA DE ESCRITORIO EXTRAPEQUENA (xs) ****************/
+        
+        @media(max-width: 767px) {
+            .col-xs-p-12 {
+                width: 100%;
+            }
+            .col-xs-p-11 {
+                width: 91.66666667%;
+            }
+            .col-xs-p-10 {
+                width: 83.33333333%;
+            }
+            .col-xs-p-9 {
+                width: 75%;
+            }
+            .col-xs-p-8 {
+                width: 66.66666667%;
+            }
+            .col-xs-p-7 {
+                width: 58.33333333%;
+            }
+            .col-xs-p-6 {
+                width: 50%;
+            }
+            .col-xs-p-5 {
+                width: 41.66666667%;
+            }
+            .col-xs-p-4 {
+                width: 33.33333333%;
+            }
+            .col-xs-p-3 {
+                width: 25%;
+            }
+            .col-xs-p-2 {
+                width: 16.66666667%;
+            }
+            .col-xs-p-1 {
+                width: 8.33333333%;
+            }
+            .col-xs-p-0 {
+                display: none;
+            }
+        }
+        
+        .boton-personalizado-4 {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+            color: #333333;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: #FFD27D;
+            border-color: #d8d8d8;
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 35px;
+        }
